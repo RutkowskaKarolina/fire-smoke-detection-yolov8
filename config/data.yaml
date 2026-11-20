@@ -1,0 +1,11 @@
+path: /path/to/fire-smoke-detection/data/processed
+
+train: train/images
+val: val/images
+test: test/images
+
+nc: 2
+
+names:
+  0: smoke
+  1: fire
