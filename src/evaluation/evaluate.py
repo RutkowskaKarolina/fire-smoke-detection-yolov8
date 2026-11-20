@@ -278,7 +278,7 @@ def main():
     metrics = model.val(
         data=args.data,
         split=args.split,
-        conf=args.conf,
+        conf=0.001,
         iou=args.iou,
         imgsz=args.imgsz,
         project="reports",

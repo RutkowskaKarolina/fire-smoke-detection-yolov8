@@ -312,10 +312,12 @@ The evaluation settings are:
 
 | Parameter | Value |
 |---|---|
+| Confidence threshold for mAP, Precision and Recall | 0.001 |
 | Confidence threshold for FP/image | 0.25 |
 | NMS IoU threshold | 0.70 |
 | Ground-truth matching IoU | 0.50 |
 | Image size | 640 |
+
 
 Predictions are processed in descending confidence order.
 
@@ -333,8 +335,7 @@ Images without annotated objects are included in the denominator.
 
 The confidence threshold and NMS IoU threshold are held constant across experimental configurations for FP/image comparisons.
 
-The evaluation procedure for mAP, Precision, and Recall must also be applied consistently across all experiments.
-
+Standard YOLO detection metrics (mAP@0.5, mAP@0.5:0.95, Precision, and Recall) are calculated using a confidence threshold of 0.001. FP/image is calculated separately using a fixed confidence threshold of 0.25. The NMS IoU threshold is 0.70 for both procedures. These evaluation settings remain identical across all experimental configurations (E0–E5).
 ## 7. Technical Verification
 
 The project has undergone initial local verification:
