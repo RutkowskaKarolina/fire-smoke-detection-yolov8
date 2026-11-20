@@ -1,0 +1,4 @@
+# Python 3.11
+ultralytics==8.3.200
+PyYAML==6.0.2
+numpy==2.2.6

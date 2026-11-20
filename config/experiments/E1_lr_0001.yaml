@@ -1,0 +1,6 @@
+model: yolov8s.pt
+data: data/processed/data.yaml
+seed: 42
+project: models
+name: E1_lr_0001
+lr0: 0.001

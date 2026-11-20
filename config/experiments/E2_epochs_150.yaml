@@ -1,0 +1,6 @@
+model: yolov8s.pt
+data: data/processed/data.yaml
+seed: 42
+project: models
+name: E2_epochs_150
+epochs: 150

@@ -1,0 +1,24 @@
+
+# E0 - baseline YOLOv8s
+# Fixed reference configuration for all experiments
+
+model: yolov8s.pt
+data: data/processed/data.yaml
+
+# Training parameters
+epochs: 100
+imgsz: 640
+batch: 16
+optimizer: SGD
+lr0: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+
+# Reproducibility
+seed: 42
+deterministic: true
+
+# Experiment outputs
+project: models
+name: E0_baseline
+exist_ok: true

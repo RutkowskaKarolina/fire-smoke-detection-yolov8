@@ -1,0 +1,6 @@
+model: yolov8s.pt
+data: data/processed/data.yaml
+seed: 42
+project: models
+name: E3_batch_8
+batch: 8
